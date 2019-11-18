@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .step-wrap {
+        width: 100%;
+    }
+
+    .step-wrap>.step {
+        display: inline-block;
+    }
+
+    .step-wrap>.step>.step-circle {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: relative;
+        vertical-align: middle;
+        margin-left: -6px;
+    }
+
+    .step-wrap>.step>.step-circle-info {
+        /* background-color: #409eff; */
+        border: 3px solid #409eff;
+    }
+
+    .step-wrap>.step>.step-circle-primary {
+        /* background-color: #ccc; */
+        border: 3px solid #ccc;
+    }
+
+    .step-wrap>.step>.step-circle-default {
+        /* background-color: #000; */
+        border: 3px solid #000;
+    }
+    /* .step-wrap>.step>.step-circle::after{
+        content: '';
+        display: inline-block;
+        width: 200px;
+        height: 5px;
+        background-attachment: #ccc;
+        position: absolute;
+    }  */
+    .step-line{
+        display: inline-block;
+        width: 200px;
+        height: 3px;
+        background-color: #ccc;
+        /* vertical-align: middle; */
+        margin-left: -6px;
+
+    }
+</style>
+
+<body>
+    <div class="step-wrap">
+        <div class="step">
+            <!-- 进度图形 -->
+            <span class="step-circle step-circle-info"></span>
+            <!-- 进度内容 -->
+            <span class="step-container"></span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-circle step-circle-primary"></span>
+            <span class="step-container"></span>
+        </div>
+        <div class="step-line"></div>
+        <div class="step">
+            <span class="step-circle step-circle-default"></span>
+            <span class="step-container"></span>
+        </div>
+
+    </div>
+</body>
+
+</html>
